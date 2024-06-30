@@ -4,22 +4,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:100vw;
-
+}
+.skills h1{
+    margin-bottom: 20px;
 }
 .skills-container{
     background-color: black;
-    display:grid;
+    /*display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     column-gap: 10px;
     row-gap: 20px;
-    padding: 25px 100px;
-    width: 90%;
+    width: 100%;*/
     box-shadow: 0.1px 0.3px 10px rgb(50, 48, 48);
+    padding:  30px ;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
-.logo{
+
+/*.logo{
     width: 60px;
 }
 .css,.github{
@@ -31,4 +37,4 @@
 }
 .logo:hover{
     filter: none;
-}
+}*/

@@ -1,17 +1,18 @@
 import React from 'react'
 import myImg from '../../../public/assets/profile-pic-normal.jpeg'
 import './about-me.css'
+import '../../Styles/App.css'
 export const AboutMe = () => {
   return (
     <div className='about-me-container'>
       <h1>About Me</h1>
       <div className='about-me-content'>
-        <img src={myImg} alt="Profile Picture" className='about-me-profile-img' />
+        <img src={myImg} alt="Profile Picture" className='about-me-profile-img ' />
 
         <div className='about-me-text'>
           <div className='about-me-highlights'>
-            <div className='about-me-highlight'>
-              <div className='highlight'>
+            <div className='about-me-highlight '>
+              <div className='highlight '>
                 <img src='../../../public/assets/education.png' alt="Education Icon" />
                 <b>Education:</b> 
               </div>

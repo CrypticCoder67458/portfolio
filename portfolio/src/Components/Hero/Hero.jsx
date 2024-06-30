@@ -2,13 +2,14 @@ import React from 'react'
 import heroImg from '../../../public/assets/profile-pic.png'
 import { FaGithub } from "react-icons/fa";
 import './hero.css'
+import '../../Styles/App.css'
 
 export const Hero = () => {
   return (
     <div className='hero'>
         <img  src={heroImg} 
-        alt="profile-pic" 
-        className='hero-profile-img'/>
+        alt="profile-pic " 
+        className='hero-profile-img dark-white-effect'/>
         <div className='hero-text'>
             <p>Hello, I'm</p>
             <h2>Youssef Mlika</h2>

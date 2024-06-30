@@ -15,8 +15,18 @@ export const Skills = () => {
   return (
     <div className='skills' >
         <h1>Technical Skills:</h1>
+        
         <div className='skills-container'>
-            <img src='../../../public/Logos/html5-logo-10.png' className='logo dark-white-effect'/>
+            <FaHtml5 color='white' size={50} className='zoom-effect logo'/>
+            <FaCss3Alt color='white' size={50} className='zoom-effect logo'/>
+            <DiJavascript color='white' size={54} className='zoom-effect logo'/>
+            <FaReact color='white' size={50} className='zoom-effect logo'/>
+            <FaGithub color='white' size={50} className='zoom-effect logo'/>
+            <FaGitAlt color='white' size={50} className='zoom-effect logo'/>
+            <FaPython color='white' size={50}  className='zoom-effect logo'/>
+            <FaJava color='white ' size={50} className='zoom-effect logo'/>
+
+            {/*<img src='../../../public/Logos/html5-logo-10.png' className='logo dark-white-effect'/>
             <img src='../../../public/Logos/css-logo.png' className='logo css dark-white-effect'/>
             <img src='../../../public/Logos/javascript-logo-big.png' className='logo dark-white-effect'/>
             <img src='../../../public/assets/react.svg' className='logo dark-white-effect'/>
@@ -25,7 +35,7 @@ export const Skills = () => {
             <img src='../../../public/Logos/python-logo-452175197.png' className='logo dark-white-effect'/>
             <img src='../../../public/Logos/java-logo-1-574885533.png' className='logo java dark-white-effect'/>
             
-            
+            */}
         </div>
     </div>
   )

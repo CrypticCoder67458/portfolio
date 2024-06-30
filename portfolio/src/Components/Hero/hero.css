@@ -27,6 +27,7 @@
     color: gray;
 }
 .hero-btns{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,12 +35,12 @@
     column-gap: 10px;
 }
 .hero-btns button{
+    background-color: #348bdd;
     margin-top: 10px;
     padding: 10px 20px;
-    font-size: 20px;
-    border: black solid 1px;
+    font-size: 18px;
+    border: none;
     border-radius: 30px;
-    background-color: black;
     color: white;
 }
 .hero-btns button:hover{

@@ -1,4 +1,5 @@
 .about-me-content{
+    overflow-x:visible;
     position: relative;
     padding: 20px;
     margin-top: 20px;
@@ -24,6 +25,7 @@
     left: 0;
     box-shadow: 0.1px 0.3px 10px rgb(50, 48, 48);
     overflow-y: hidden;
+    overflow-x: visible;
 
 }
 .about-me-profile-img{
@@ -33,6 +35,8 @@
     margin-left: 30px;
 }
 .about-me-highlights{
+    height: 200px;
+    overflow-y: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,8 +56,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 20px;
+
 }
 .about-me-highlight b{
     overflow-x: visible;

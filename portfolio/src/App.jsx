@@ -6,7 +6,7 @@ import { AboutMe } from "./Components/AboutMe/AboutMe"
 
 function App() {
   return(
-    <div>
+    <div className="app">
         <Navbar/>
         <Hero/>
         <AboutMe/>
