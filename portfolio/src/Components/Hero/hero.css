@@ -1,7 +1,7 @@
 .hero{
     margin-top: 120px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     min-height: 10vh;
     padding-left: 10%;
@@ -35,18 +35,11 @@
     column-gap: 10px;
 }
 .hero-btns button{
-    background-color: #348bdd;
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 18px;
-    border: none;
-    border-radius: 30px;
-    color: white;
+    height: auto;
+    margin-right: 5px;
+    
 }
-.hero-btns button:hover{
-    background-color: white;
-    color: black;
-}
+
 .links{
     margin-top: 15px;
     display: flex;

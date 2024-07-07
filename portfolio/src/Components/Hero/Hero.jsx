@@ -7,9 +7,7 @@ import '../../Styles/App.css'
 export const Hero = () => {
   return (
     <div className='hero'>
-        <img  src={heroImg} 
-        alt="profile-pic " 
-        className='hero-profile-img dark-white-effect'/>
+        
         <div className='hero-text'>
             <p>Hello, I'm</p>
             <h2>Youssef Mlika</h2>
@@ -22,6 +20,9 @@ export const Hero = () => {
                 <FaGithub size={40}/>
             </div>
         </div>
+        <img  src={heroImg} 
+        alt="profile-pic " 
+        className='hero-profile-img dark-white-effect'/>
     </div>
   )
 }
