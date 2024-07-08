@@ -11,9 +11,9 @@ export const Project = ({project}) => {
         <h1>{project.title}</h1>
         
         <div className='project-info'>
-            <div className='project-links'>
+            <div className='project-links zoom-effect'>
             <FaArrowLeft size={20}/>Live Demo </div>
-            <div  className='project-links'>Code <FaArrowRight size={20}/></div>
+            <div  className='project-links zoom-effect'>Code <FaArrowRight size={20}/></div>
         </div>
 
     </div>

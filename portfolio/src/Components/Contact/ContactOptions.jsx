@@ -24,7 +24,7 @@ export const ContactOptions = () => {
                 {contact.element}
                 <h3>{contact.title}</h3>
                 <p>{contact.text}</p>
-                <div className='write-me'>Write me <FaArrowRightLong size={16}/> </div>
+                <div className='write-me zoom-effect'>Write me <FaArrowRightLong size={16}/> </div>
 
             </div>
           })}

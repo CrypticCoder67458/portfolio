@@ -47,7 +47,7 @@
 
  
  .about-me-highlight:hover{
-    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.3), 0 0 rgba(128, 128, 128, 0.3); 
+    box-shadow: 0.1px 0.3px 5px 3px rgb(65, 64, 64);
  }
  .about-me-paragraph{
     overflow-y: hidden;
