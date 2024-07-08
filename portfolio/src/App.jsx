@@ -3,8 +3,9 @@ import { Navbar } from "./Components/Navbar/Navbar"
 import './Styles/App.css'
 import { Skills } from "./Components/Skills/Skills"
 import { AboutMe } from "./Components/AboutMe/AboutMe"
-import { Project } from "./Components/Projects/Project"
-
+import { Projects } from "./Components/Projects/Projects"
+import { Contact } from "./Components/Contact/Contact"
+import { Footer } from "./Components/Footer/Footer"
 function App() {
   return(
     <div className="app">
@@ -12,7 +13,10 @@ function App() {
         <Hero/>
         <AboutMe/>
         <Skills/>
-        <Project/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+
 
     </div>
   )

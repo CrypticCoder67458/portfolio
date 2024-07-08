@@ -18,6 +18,9 @@ button{
     border: none;
     border-radius: 12px;
     color: white; 
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
 }
 button:hover{
     background-color: white;
