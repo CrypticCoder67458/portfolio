@@ -9,6 +9,22 @@ import { FaFileDownload } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
 export const AboutMe = ({isEnglish}) => {
 
+  const handleCVDownload = (e) => {
+    e.preventDefault()
+    const link = document.createElement('a')
+    link.download = 'Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf'
+    link.href = e.target.getAttribute('download')
+    link.click()
+  }
+
+  const handleGradesDownload = (e) => {
+    e.preventDefault()
+    const link = document.createElement('a')
+    link.download = 'Leistungspiegel.png'
+    link.href = e.target.getAttribute('download')
+    link.click()
+  }
+
   return (
     <div className="about-me-container" 
     id='about'>
@@ -36,17 +52,21 @@ export const AboutMe = ({isEnglish}) => {
 
           <p className="about-me-paragraph">
             {isEnglish ? 
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut obcaecati rerum similique maiores sit voluptatibus consequatur, architecto perspiciatis unde, provident error perferendis. Quaerat, ab laudantium. Cum ipsum nemo dolor sit nihil expedita, officia tempore nulla, dolores pariatur explicabo! Laudantium facilis officia, ' :
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ut obcaecati rerum similique maiores sit voluptatibus consequatur, architecto perspiciatis unde, provident error perferendis. Quaerat, ab laudantium. Cum ipsum nemo dolor sit nihil expedita, officia tempore nulla, dolores pariatur explicabo! Laudantium facilis officia, die ich studierte und einige Erfahrungen gesammelt habe. '}
+              'I am currently studying informatics at TU Darmstadt and am looking for a part-time position as a frontend web developer. With a solid foundation in HTML, CSS, and JavaScript, and a familiarity with frameworks like React , I am eager to apply my skills in a dynamic company environment, ' :
+              'Ich studiere derzeit Informatik an der TU Darmstadt und suche eine Teilzeitstelle als Frontend-Webentwickler. Mit einer soliden Grundlage in HTML, CSS und JavaScript sowie Vertrautheit mit Frameworks wie React, bin ich bestrebt, meine Fähigkeiten in einem dynamischen Unternehmensumfeld einzusetzen.'}
           </p>
           <div className='about-me-btns'>
 
-            <button >{isEnglish ? 'See my grades' : 'Meine Noten anzeigen'}
-              <FaEye size={20}/>
-            </button>
-            <button >{isEnglish ? 'Download CV' : 'Mein Lebenslauf herunterladen'}
-              <FaFileDownload size={20}/>
-            </button>
+            <a download='Leistungspiegel.png' href='../../../public/assets/Leistungspiegel.png' onClick={handleGradesDownload}>
+              <button >{isEnglish ? 'See my grades' : 'Meine Noten anzeigen'}
+                <FaEye size={20}/>
+              </button>
+            </a>
+            <a download='Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf' href='../../../public/assets/Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf' onClick={handleCVDownload}>
+              <button >{isEnglish ? 'Download CV' : 'Mein Lebenslauf herunterladen'}
+                <FaFileDownload size={20}/>
+              </button>
+            </a>
           </div>
         </div>
       </div>

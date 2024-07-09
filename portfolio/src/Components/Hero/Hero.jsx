@@ -14,20 +14,26 @@ export const Hero = ({isEnglish}) => {
     secondP: 'Frontend Web Entwickler'
   }
   const text = isEnglish ? english : german
+  const handleCVDownload = (e) => {
+    e.preventDefault()
+    const link = document.createElement('a')
+    link.download = 'Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf'
+    link.href = e.target.getAttribute('download')
+    link.click()
+  }
   return (
     <div className='hero'>
-        
         <div className='hero-text'>
             <p>{text.firstP}</p>
             <h2>Youssef Mlika</h2>
             <h3>{text.secondP}</h3>
             <div className='hero-btns'>
-                <button className='cv-btn'>Download CV</button>
-                <button className='contact-btn'>Contact Me</button>
+                <button className='cv-btn' onClick={(e) => handleCVDownload(e)}>Download CV</button>
+                <a href='#contact'><button className='contact-btn'>Contact Me</button></a>
             </div>
-            <div className='links'>
+            <a  href='https://github.com/CrypticCoder67458?tab=repositories' className='links'>
                 <FaGithub size={40}/>
-            </div>
+            </a>
         </div>
         <img  src={heroImg} 
         alt="profile-pic " 
