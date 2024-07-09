@@ -2,17 +2,17 @@ import React from 'react'
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-export const ContactOptions = () => {
+export const ContactOptions = ({isEnglish}) => {
   const contactOption=[
     {
       element:<AiOutlineMail size={25}/> ,
-      title:"Email",
-      text:"N8v9o@example.com",
+      title:"E-Mail",
+      text:"mlikayoussef155@gmail.com",
     },
     {
       element:<FaWhatsapp  size={25}/> ,
-      title:"Whatsapp",
-      text:"999-888-777",
+      title: "WhatsApp",
+      text:"+49-16095528732",
     }
   
   ]
@@ -20,14 +20,15 @@ export const ContactOptions = () => {
     <div className='contact-options'>
         <h2 className='section-title'>Talk to me</h2>
         <div className='contact-options-container'>
-            {contactOption.map((contact)=>{return <div className='contact-option'>
+            {contactOption.map((contact)=>(
+              <div className='contact-option' key={contact.title}>
                 {contact.element}
                 <h3>{contact.title}</h3>
                 <p>{contact.text}</p>
-                <div className='write-me zoom-effect'>Write me <FaArrowRightLong size={16}/> </div>
+                <div className='write-me zoom-effect'>{isEnglish ? 'Write me' : 'Schreib mir'}  <FaArrowRightLong size={16}/> </div>
 
             </div>
-          })}
+          ))}
         </div>
     </div>
     )

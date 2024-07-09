@@ -4,7 +4,7 @@ import '../../Styles/App.css'
 import { FaArrowRight } from "react-icons/fa6";
 import { FaArrowLeft } from "react-icons/fa6";
 
-export const Project = ({project}) => {
+export const Project = ({project,isEnglish}) => {
   return (
     <div className='project'>
         <img src={project.img} className='dark-white-effect' />

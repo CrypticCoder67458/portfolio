@@ -70,7 +70,7 @@
     display: flex;
     align-items: center;
     column-gap: 10px;
-    width: 300px;
+    width: 260px;
    height: 200px;
 }
 .about-me-highlight{
@@ -108,7 +108,7 @@
     column-gap: 15px;
     align-items: center;
     justify-content: center;
-    padding: 15px 0px;
+    padding: 15px 10px;
 }
 
 
@@ -126,16 +126,13 @@
     margin-top: 30px;
     height: 380px;
 }
-.about-me-highlights{
-    flex-direction: column;
-    row-gap: 10px;
-}
+
 .about-me-highlight{
     height: 30px;
     flex-direction: column;
 }
-.about-me-paragraph{
-    margin: 10px 10px 0 10px;
+.about-me-paragraph {
+    max-width: 600px;
 }
 
     /* Your CSS styles for smaller screens here 

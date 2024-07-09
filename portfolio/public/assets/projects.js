@@ -1,11 +1,11 @@
-import projectImg1 from './project-1.png'
-import  projectImg2 from './project-2.png'
-import projectImg3 from './project-3.png'
+import projectImg1 from '../projects screenshots/e-commerce website.png'
+import  projectImg2 from '../projects screenshots/portfolio-img-project.png'
+import projectImg3 from '../projects screenshots/welcome.png'
 export const projects=[
     {
         number:1,
         img:projectImg1,
-        title: 'e-commerce website',
+        title: 'E-commerce website',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat aliquam pariatur sunt dolorum autem nobis illo neque incidunt, reprehenderit doloremque eaque libero rem deleniti vitae adipisci quod, illum quis!',
         demoUrl:'demo',
         codeUrl:'github',
@@ -13,7 +13,7 @@ export const projects=[
     {
         number:2,
         img:projectImg2,
-        title: 'portfolio',
+        title: 'Portfolio',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat aliquam pariatur sunt dolorum autem nobis illo neque incidunt, reprehenderit doloremque eaque libero rem deleniti vitae adipisci quod, illum quis!',
         demoUrl:'demo',
         codeUrl:'github',
@@ -21,7 +21,7 @@ export const projects=[
     {
         number:3,
         img:projectImg3,
-        title: 'youtube filter ',
+        title: 'Youtube Scrapper',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat aliquam pariatur sunt dolorum autem nobis illo neque incidunt, reprehenderit doloremque eaque libero rem deleniti vitae adipisci quod, illum quis!',
         demoUrl:'demo',
         codeUrl:'github',

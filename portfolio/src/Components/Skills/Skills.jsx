@@ -11,10 +11,10 @@ import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
 
 
-export const Skills = () => {
+export const Skills = ({isEnglish}) => {
   return (
-    <div className='skills' >
-        <h1>Technical Skills:</h1>
+    <div className='skills'id='skills' >
+        <h1>{isEnglish ? 'Technical Skills' : 'Fähigkeiten'}:</h1>
         
         <div className='skills-container'>
             <FaHtml5 color='white' size={50} className='zoom-effect logo'/>
