@@ -7,23 +7,11 @@ import { MdWorkspacePremium } from "react-icons/md";
 import { Highlight } from './Highlight';
 import { FaFileDownload } from "react-icons/fa";
 import { FaEye } from "react-icons/fa";
+import cv from '../../../public/assets/Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf'
+import grades from '../../../public/assets/leistung spiegel.png'
 export const AboutMe = ({isEnglish}) => {
 
-  const handleCVDownload = (e) => {
-    e.preventDefault()
-    const link = document.createElement('a')
-    link.download = 'Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf'
-    link.href = e.target.getAttribute('download')
-    link.click()
-  }
-
-  const handleGradesDownload = (e) => {
-    e.preventDefault()
-    const link = document.createElement('a')
-    link.download = 'Leistungspiegel.png'
-    link.href = e.target.getAttribute('download')
-    link.click()
-  }
+ 
 
   return (
     <div className="about-me-container" 
@@ -57,12 +45,12 @@ export const AboutMe = ({isEnglish}) => {
           </p>
           <div className='about-me-btns'>
 
-            <a download='Leistungspiegel.png' href='../../../public/assets/Leistungspiegel.png' onClick={handleGradesDownload}>
+            <a download={grades} href={grades} >
               <button >{isEnglish ? 'See my grades' : 'Meine Noten anzeigen'}
                 <FaEye size={20}/>
               </button>
             </a>
-            <a download='Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf' href='../../../public/assets/Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf' onClick={handleCVDownload}>
+            <a download={cv} href={cv}>
               <button >{isEnglish ? 'Download CV' : 'Mein Lebenslauf herunterladen'}
                 <FaFileDownload size={20}/>
               </button>

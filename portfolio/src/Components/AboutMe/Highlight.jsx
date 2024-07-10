@@ -1,5 +1,7 @@
 import React from 'react'
 import './about-me.css'
+
+
 export const Highlight = ({element,title,text}) => {
     
     return (
