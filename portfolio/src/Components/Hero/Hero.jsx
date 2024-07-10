@@ -3,7 +3,7 @@ import heroImg from '../../../public/assets/Designer.png'
 import { FaGithub } from "react-icons/fa";
 import './hero.css'
 import '../../Styles/App.css'
-
+import cv from '../../../public/assets/Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf'
 export const Hero = ({isEnglish}) => {
   const english = {
     firstP: 'Hello, I\'m',
@@ -14,13 +14,7 @@ export const Hero = ({isEnglish}) => {
     secondP: 'Frontend Web Entwickler'
   }
   const text = isEnglish ? english : german
-  const handleCVDownload = (e) => {
-    e.preventDefault()
-    const link = document.createElement('a')
-    link.download = 'Youssef-Mlika-FlowCV-Lebenslauf-20240710.pdf'
-    link.href = e.target.getAttribute('download')
-    link.click()
-  }
+  
   return (
     <div className='hero'>
         <div className='hero-text'>
@@ -28,7 +22,7 @@ export const Hero = ({isEnglish}) => {
             <h2>Youssef Mlika</h2>
             <h3>{text.secondP}</h3>
             <div className='hero-btns'>
-                <button className='cv-btn' onClick={(e) => handleCVDownload(e)}>Download CV</button>
+                <a href='' download={cv}><button className='cv-btn'>Download CV</button></a>
                 <a href='#contact'><button className='contact-btn'>Contact Me</button></a>
             </div>
             <a  href='https://github.com/CrypticCoder67458?tab=repositories' className='links'>
