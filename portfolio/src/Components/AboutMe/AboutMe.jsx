@@ -47,12 +47,12 @@ export const AboutMe = ({isEnglish}) => {
 
             <a download={grades} href={grades} >
               <button >{isEnglish ? 'See my grades' : 'Meine Noten anzeigen'}
-                <FaEye size={20}/>
+                <FaEye size={20} className='btn-download-img'/>
               </button>
             </a>
             <a download={cv} href={cv}>
               <button >{isEnglish ? 'Download CV' : 'Mein Lebenslauf herunterladen'}
-                <FaFileDownload size={20}/>
+                <FaFileDownload size={20} className='btn-download-img'/>
               </button>
             </a>
           </div>

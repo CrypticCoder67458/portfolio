@@ -9,7 +9,7 @@ export const Project = ({project}) => {
     <div className='project'>
         <img src={project.img} className='dark-white-effect' />
         {project.isWorking ? null:<div className='not-working'>Currently Not Working</div>}
-        <h1>{project.title}</h1>
+        <h1 className='project-title'>{project.title}</h1>
         
         <div className='project-info'>
             <a  href={project.demoUrl} className='project-links zoom-effect'>

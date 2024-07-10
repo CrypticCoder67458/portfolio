@@ -1,20 +1,22 @@
-.hero{
-    margin-top: 120px;
+
+.hero {
+    margin-top: 7rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     min-height: 10vh;
     padding-left: 10%;
     padding-right: 10%;
-    margin-bottom: 130px;
+    margin-bottom: 8rem;
+    min-width: 320px; /* Example min-width value, adjust as needed */
 }
-.hero-profile-img{
-    width: 250px;
-    margin-right: 50px;
-     
+
+.hero-profile-img {
+    width: 15rem;
+    margin-right: 3rem;
 }
-.hero-text{
-    margin-top: 30px;
+.hero-text {
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,11 +50,39 @@
     align-items: center;
     column-gap: 10px;
 }
-/*.cv-btn:hover,.contact-btn{
-    background: rgb(0, 0, 0);
-    color: white;
+@media (max-width: 768px) {
+    .hero {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        flex-direction: column;
+        -ms-flex-order: 1;
+    }
+
+    .hero-profile-img {
+        width: 10rem;
+        margin-right: 2rem;
+        order: -1;
+        align-items: center;
+    
+    }
+
+    .hero-text {
+        margin-top: 1rem;
+    }
 }
-.contact-btn:hover{
-    color: black;
-    background-color: white;
-}*/
+
+@media (max-width: 480px) {
+    .hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-profile-img {
+        width: 8rem;
+        margin-right: 1rem;
+    }
+
+    .hero-text {
+        margin-top: 0.5rem;
+    }
+}
