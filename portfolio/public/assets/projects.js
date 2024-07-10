@@ -7,7 +7,7 @@ export const projects=[
         img:projectImg1,
         title: 'E-commerce website',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas placeat aliquam pariatur sunt dolorum autem nobis illo neque incidunt, reprehenderit doloremque eaque libero rem deleniti vitae adipisci quod, illum quis!',
-        demoUrl:'https://e-commerce-ym.netlify.app',
+        demoUrl:'https://e-commerce-ym.netlify.app/',
         codeUrl:'https://github.com/CrypticCoder67458/E-commerce-app',
         isWorking:true,
     },
